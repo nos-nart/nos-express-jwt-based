@@ -9,7 +9,7 @@ const sendApiSuccess = (res, statusCode, data, message) => {
     })
 }
 
-const sendApiError = (res, status, error, message) => {
+const sendApiError = (res, statusCode, error, message) => {
   return res.status(statusCode)
     .send({
       ok: false,
